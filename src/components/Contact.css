@@ -1,0 +1,30 @@
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-links a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+.btn.light {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* In dark mode, override light button text color */
+.dark .btn.light {
+  background-color: #fff;
+  color: #000; /* ✅ make text black in dark mode */
+  border-color: #fff;
+}

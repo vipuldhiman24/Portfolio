@@ -1,0 +1,37 @@
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 300px;
+  background: #fff;
+  text-align: center;
+}
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.dark .project-card {
+  background: #222;
+  border-color: #444;
+}
+.dark-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+

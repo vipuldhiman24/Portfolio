@@ -1,0 +1,61 @@
+.about {
+  padding: 4rem 2rem;
+  background-color: var(--bg);
+  text-align: center;
+  color: var(--text);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.dark .about-card {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+
+.about-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.about-card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+  margin-top: 1rem;
+  color: var(--text);
+}
+
+.about-card li {
+  margin-bottom: 1rem;
+}
+
+
