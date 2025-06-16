@@ -25,8 +25,8 @@ const Header = () => {
           </div>
 
           <div className="social-links">
-            <a
-              href="https://linkedin.com/in/vipuldhiman24"
+                        <a
+              href="https://www.linkedin.com/in/vipul-d24"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
