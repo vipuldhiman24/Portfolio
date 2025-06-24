@@ -23,7 +23,7 @@
   width: 500px;
   height: 400px;
   border-radius: 1rem;
-  background-image: url('/public/pic.jpg'); /* Place pic.jpg in /public */
+  background-image: url('../../public/pic.jpg'); 
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -39,8 +39,8 @@
 
 /* Light theme styles */
 .light .header {
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #f9f9f9 !important;
+  color: #000 !important;
 }
 .light .btn {
   background-color: #000;
@@ -50,13 +50,16 @@
 
 /* Dark theme styles */
 .dark .header {
-  background-color: #111;
-  color: #fff;
+  background-color: #111 !important;
+  color: #fff !important;
 }
 .dark .header .btn {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #fff;
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #fff !important;
+}
+.dark .header-content .role {
+  color: #aaa !important;
 }
 
 /* Button styling */
@@ -64,7 +67,7 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center; /* Center buttons on small screens */
+  justify-content: center;
 }
 .btn {
   padding: 0.6rem 1.4rem;
@@ -93,71 +96,80 @@
 .social-links a:hover {
   color: gray;
 }
+
 /* Responsive Header Fix for Mobile */
 @media (max-width: 768px) {
-.header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
-  background-color: #111;
-  color: #fff;
-}
+  .header {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    /* Remove hardcoded bg — theme handles it */
+  }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-header-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-image: url('/public/pic.jpg'); /* Make sure this image exists at public/pic.jpg */
-  background-size: cover;
-  background-position: center;
-  border: 3px solid white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  margin: 0 auto 1rem auto;
-}
+  .header-img {
+    display: none;
 
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('/public/pic.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 1rem auto;
+  }
 
-.header-content h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-}
+  .header-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
 
-.header-content .role {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #aaa;
-  margin-bottom: 1.5rem;
-}
+  .header-content .role {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
 
-.header-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  max-width: 300px;
-}
+  .header-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
 
-.btn {
-  padding: 0.8rem 1.4rem;
-  background-color: #fff;
-  color: #000;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
+  .btn {
+    padding: 0.8rem 1.4rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
 
-.btn:hover {
-  opacity: 0.8;
-}
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  /* Fix dark mode on mobile */
+  .dark .header {
+    background-color: #111 !important;
+    color: #fff !important;
+  }
+
+  .dark .btn {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+  }
+
+  .dark .header-content .role {
+    color: #aaa !important;
+  }
 }
