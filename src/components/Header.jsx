@@ -16,7 +16,7 @@ const Header = () => {
           <h3 className="role">Associate Software Engineer</h3>
 
           <div className="header-buttons">
-            <a href="/Vipul_Dhiman24.pdf" className="btn primary" download>
+            <a href="https://drive.google.com/file/d/1qQMmW9hguiTOEIHomtQMC5PihHiF7JmF/view?usp=drive_link" className="btn primary" download>
               Download Resume
             </a>
             <a href="#contact" className="btn primary">
